@@ -1,0 +1,164 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#2D6A4F",
+          "name": "Forest Green (Primary)"
+        },
+        {
+          "slug": "secondary",
+          "color": "#40916C",
+          "name": "Medium Green (Secondary)"
+        },
+        {
+          "slug": "accent",
+          "color": "#F4A261",
+          "name": "Warm Orange (Accent)"
+        },
+        {
+          "slug": "light",
+          "color": "#D8F3DC",
+          "name": "Mint Mist (Light)"
+        },
+        {
+          "slug": "background",
+          "color": "#FEFAE0",
+          "name": "Warm Cream (Background)"
+        },
+        {
+          "slug": "text",
+          "color": "#1B2F26",
+          "name": "Deep Forest (Text)"
+        },
+        {
+          "slug": "muted",
+          "color": "#6B8F71",
+          "name": "Muted Green"
+        },
+        {
+          "slug": "white",
+          "color": "#FFFFFF",
+          "name": "White"
+        }
+      ],
+      "gradients": [
+        {
+          "slug": "brand-gradient",
+          "gradient": "linear-gradient(135deg, #2D6A4F 0%, #40916C 100%)",
+          "name": "Brand Gradient"
+        },
+        {
+          "slug": "warm-gradient",
+          "gradient": "linear-gradient(135deg, #F4A261 0%, #FEFAE0 100%)",
+          "name": "Warm Gradient"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "'Playfair Display', Georgia, serif",
+          "slug": "heading",
+          "name": "Playfair Display (Headings)"
+        },
+        {
+          "fontFamily": "'Nunito', 'Helvetica Neue', sans-serif",
+          "slug": "body",
+          "name": "Nunito (Body)"
+        }
+      ],
+      "fontSizes": [
+        { "slug": "small",       "size": "0.875rem", "name": "Small"         },
+        { "slug": "medium",      "size": "1rem",     "name": "Medium"        },
+        { "slug": "large",       "size": "1.25rem",  "name": "Large"         },
+        { "slug": "x-large",     "size": "1.5rem",   "name": "Extra Large"   },
+        { "slug": "xx-large",    "size": "2rem",     "name": "2X Large"      },
+        { "slug": "xxx-large",   "size": "2.75rem",  "name": "3X Large"      }
+      ]
+    },
+    "spacing": {
+      "spacingScale": {
+        "operator": "*",
+        "increment": 1.5,
+        "steps": 7,
+        "mediumStep": 1.5,
+        "unit": "rem"
+      }
+    },
+    "border": {
+      "radius": true,
+      "color": true,
+      "width": true
+    },
+    "layout": {
+      "contentSize": "780px",
+      "wideSize": "1100px"
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#FEFAE0",
+      "text": "#1B2F26"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--body)",
+      "fontSize": "var(--wp--preset--font-size--medium)",
+      "lineHeight": "1.75"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--heading)"
+        },
+        "color": {
+          "text": "#2D6A4F"
+        }
+      },
+      "h1": {
+        "typography": {
+          "fontSize": "clamp(2rem, 5vw, 3.25rem)",
+          "fontWeight": "900"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontSize": "clamp(1.5rem, 3vw, 2.25rem)",
+          "fontWeight": "700"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontSize": "clamp(1.2rem, 2.5vw, 1.75rem)",
+          "fontWeight": "700"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "#40916C"
+        },
+        ":hover": {
+          "color": {
+            "text": "#F4A261"
+          }
+        }
+      },
+      "button": {
+        "color": {
+          "background": "#F4A261",
+          "text": "#FFFFFF"
+        },
+        "typography": {
+          "fontWeight": "700",
+          "fontFamily": "var(--wp--preset--font-family--body)"
+        },
+        "border": {
+          "radius": "12px"
+        }
+      }
+    }
+  }
+}
